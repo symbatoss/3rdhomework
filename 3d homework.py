@@ -21,15 +21,23 @@ school[0]['note'] = 9
 print(school[0]['note'])
 
 
-# Создайте цикл для первого масссива
-for first in school:
-    print(first)
+# Создайте цикл для первого масссива 
 
+for arr in school:
+
+    print(arr)
+    if arr == school[0]:
+        break
 
 # Создайте цикл для второго масссива
-for second in arr_arr:
-    if second == arr_arr[3]:
-        print('numbers')
+arr_arr = [['river', 'ocean'], [100, 200, 300], ['cat', 'dog'], ['phone', 'tv', 'laptop'], ['blue', 'black', 'red']]
+
+for arr in arr_arr:
+    if arr == arr_arr[0]:
+        continue
+    print(arr, end=' ')
+    if arr == arr_arr[1]:
+        break
 
 # Создайте массив состоящий из 10 цифр от 0 и до 20
 arr3 = [0, 1, 5, 10, 15, 16, 18, 20, 8, 9]
